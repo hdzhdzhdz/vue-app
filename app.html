@@ -76,11 +76,11 @@
         var app = new Vue({
             el: '#app',
              ready: function() {
-        this.$http.get('book.json',function(data) {
-            this.$set('books', data);
-        }).error(function(data, status, request) {
-            console.log('fail' + status + "," + request);
-        })
+                this.$http.get('book.json',function(data) {
+                this.$set('books', data);
+                }).error(function(data, status, request) {
+                console.log('fail' + status + "," + request);
+                })
       //post方法：this.$http.post(url,postdata,function callback）
     },
             data: {
