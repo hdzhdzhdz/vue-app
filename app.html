@@ -26,6 +26,7 @@
                           <th @click="sortBy('name')">书名</th>
                           <th @click="sortBy('author')">作者</th>
                           <th @click="sortBy('price')">价格</th>
+                          <th @click="sortBy('price')">操作</th>
                       </thead>
                       <tbody>
                           <tr v-for="book in books | orderBy sortparam">
